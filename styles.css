@@ -12,6 +12,9 @@
     --shade-color: #ee6f78;
     --secondary-color: #84E05B;
     --white-text: #FFFFFF;
+    --gradient-one: linear-gradient(to right, var(--primary-color) 70%, var(--shade-color));
+    --gradient-two: linear-gradient(to right, var(--shade-color), var(--primary-color));
+    --transition-one: all 0.5s ease-in-out;
 }
 
 header {
@@ -51,7 +54,7 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     position: relative;
-    transition: all 0.5s ease-in-out;
+    transition: var(--transition-one);
     font-size: 14px;
 }
 
@@ -62,7 +65,7 @@ header {
     background-color: var(--primary-color);
     position: absolute;
     bottom: -11.4px;
-    transition: all 0.5s ease-in-out;
+    transition: var(--transition-one);
 }
 
 .top nav a:hover::before {
@@ -107,7 +110,7 @@ header {
 
 .top .buttons button.signup {
     border: 2px solid var(--primary-color);
-    background: linear-gradient(to right, var(--primary-color) 70%, var(--shade-color));
+    background: var(--gradient-one);
     color: #000;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -125,6 +128,44 @@ header {
     background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
 } */
 
+/* HERO */
+
 .hero {
-    margin-top: 200px;
+    margin-top: 150px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    text-transform: uppercase;
+}
+
+.hero hr {
+    width: 100px;
+    margin: 20px 0;
+    border-image: var(--gradient-one);
+    border-image-slice: 1;
+}
+
+.hero p {
+    width: 550px;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+    font-weight: 300;
+}
+
+.hero button {
+    background: var(--gradient-one);
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: var(--transition-one);
+}
+
+.hero button:hover {
+    background: var(--gradient-two);
 }
