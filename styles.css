@@ -169,3 +169,27 @@ header {
 .hero button:hover {
     background: var(--gradient-two);
 }
+
+
+
+.footer {
+    /* height: 100px; */
+    background: #333;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0;
+    color: var(--white-text);
+}
+
+.footer a {
+    color: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 100px;
+}
+
+footer p {
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 14px;
+}
