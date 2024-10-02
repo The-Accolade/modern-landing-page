@@ -170,6 +170,50 @@ header {
     background: var(--gradient-two);
 }
 
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 0;
+}
+
+.feature {
+    width: 350px;
+    padding: 20px;
+}
+
+.feature .image-bg {
+    background: linear-gradient(var(--shade-color), var(--primary-color));
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.feature .image-bg img {
+    width: 50%;
+}
+
+.feature h4 {
+    padding: 20px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.feature p {
+    margin-bottom: 10px;
+}
+
+.feature a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.feature a:hover {
+    cursor: pointer;
+    opacity: .9;
+}
 
 
 .footer {
